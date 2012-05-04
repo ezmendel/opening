@@ -1,4 +1,4 @@
-exports.index = (req, res) ->
+exports.page = (req, res) ->
   pageName = (req?.params?.pageName) ? "front"
 
   #fs = require('fs')
