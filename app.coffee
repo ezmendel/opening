@@ -25,6 +25,8 @@ app.configure "development", ->
 app.configure "production", ->
   app.use express.errorHandler()
 
+console.log routes
+
 app.get "/", routes.page
 app.get "/:pageName", routes.page
 
